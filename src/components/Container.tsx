@@ -10,17 +10,12 @@ export const Container = styled.div`
     max-width: 800px;
 
     #left {
-        background-color: orange;
+        background-color: #fafafa;
         min-width: 180px;
     }
 
-    #content {
-        background-color: blue;
-        flex: 1;
-    }
-
     #right {
-        background-color: green;
+        background-color: #fafafa;
         min-width: 180px;
     }
 `;

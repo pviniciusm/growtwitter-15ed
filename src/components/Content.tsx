@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { TweetCard } from "./TweetCard";
 import { Tweet } from "../models/tweet.model";
-import { useEffect, useState } from "react";
-import { tweets } from "../data/tweets.data";
 
 const ContentStyled = styled.main`
     background-color: #fafafa;

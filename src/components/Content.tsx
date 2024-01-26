@@ -28,15 +28,11 @@ const ContentStyled = styled.main`
     }
 `;
 
-export function Content() {
-    const [tweetList, setTweetList] = useState<Tweet[]>([]);
+interface ContentProps {
+    tweetList: Tweet[];
+}
 
-    useEffect(() => {
-        // chamada da API
-
-        setTweetList(tweets);
-    }, []);
-
+export function Content(props: ContentProps) {
     return (
         <ContentStyled id="content">
             <div id="content-header">
@@ -44,7 +40,7 @@ export function Content() {
             </div>
 
             <div id="content-main">
-                {tweetList.map((item) => (
+                {props.tweetList.map((item) => (
                     <TweetCard tweet={item} key={item.id} />
                 ))}
             </div>

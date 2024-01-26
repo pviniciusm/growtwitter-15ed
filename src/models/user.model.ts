@@ -2,5 +2,6 @@ export interface User {
     id: string;
     name: string;
     username: string;
-    urlPhoto: string;
+    imgUrl: string;
+    token?: string;
 }

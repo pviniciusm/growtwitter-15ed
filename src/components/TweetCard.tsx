@@ -64,7 +64,7 @@ export function TweetCard(props: TweetCardProps) {
         <TweetCardStyled>
             <div className="tweet-photo">
                 {/* <img src={props.tweet.user.urlPhoto} alt="" /> */}
-                <PhotoStyled $urlPhoto={props.tweet.user.urlPhoto}></PhotoStyled>
+                <PhotoStyled $urlPhoto={props.tweet.user.imgUrl}></PhotoStyled>
             </div>
             <div className="tweet-content">
                 <div className="tweet-title">
